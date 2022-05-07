@@ -1,18 +1,19 @@
-import express, { Application } from 'express'
+import cookieParser from 'cookie-parser'
 import dotenv from 'dotenv'
-import { listingRouter } from './routes/listing'
+import express, { Application } from 'express'
 
-dotenv.config()
+dotenv.config({ path: './server/.env' })
+
+import { listingRouter } from './routes/listing'
 
 const app: Application = express()
 
-// MIDDLEWARE?
-// cors
-// body-parser
-// cookie-parser
+app.use(express.json())
+app.use(cookieParser())
+// cors?
 
 app.use('/listing', listingRouter)
 
-app.listen(process.env.PORT, function () {
+app.listen(process.env.PORT || 3555, function () {
   console.log(`Server started on ${process.env.PORT}`)
 });
