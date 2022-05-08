@@ -5,8 +5,18 @@
   list-style: none;
   text-decoration: none;
 }
+.topbar {
+  top: -0.1%;
+  background-color: rgb(135, 134, 133);
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
 .nav {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .sidebar {
@@ -14,7 +24,8 @@
   left: 0px;
   width: 220px;
   height: 100%;
-  color: black;
+  color: #2f4f4f;
+  margin-top: 5%;
   /*background: #03dac6;*/
   transition: all ease 0.5s;
 }
@@ -34,11 +45,11 @@
   width: 100%;
   line-height: 65px;
   font-size: 20px;
-  color: black;
+  color: #2f4f4f;
   padding-left: 40px;
   box-sizing: border-box;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-right: 1px solid rgb(15, 14, 14);
+  border-right: 1px solid #878585;
   /*  border-bottom: 1px solid rgb(14, 131, 135);*/
   transition: 0.4s;
 }
@@ -62,7 +73,7 @@ label #btn,
 label #cancel {
   position: absolute;
   cursor: pointer;
-  background: black;
+  background: #2f4f4f;
   border-radius: 3px;
 }
 #btn:hover,

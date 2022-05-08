@@ -30,6 +30,8 @@
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
   padding: 20px;
+  margin-left: -46%;
+  margin-top: -43%;
 }
 
 .inner {
@@ -51,19 +53,19 @@
 
 circle {
   fill: none;
-  stroke: url(#GradientColor);
+  stroke: #707070;
   stroke-width: 20px;
   stroke-dasharray: 472;
   stroke-dashoffset: 472;
   animation: circle_bound 2s linear forwards;
-  align-items: center;
-  justify-content: center;
 }
 
 svg {
   position: absolute;
+  /* top: -50px;
+  left: -70px;*/
   top: 0;
-  left: 0;
+  left: -72px;
 }
 
 @keyframes circle_bound {
@@ -82,13 +84,13 @@ svg {
 }
 
 .card_style:hover {
-  box-shadow: 1px 1px 5px 5px #dbe3e1;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
 .Money_card:hover {
   margin-left: 20px;
-  box-shadow: 1px 1px 5px 5px #d9b3ff;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 .Due_card:hover {
-  box-shadow: 2px 2px 5px 5px #c6ecd9;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
 }

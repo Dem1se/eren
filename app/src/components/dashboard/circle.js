@@ -10,8 +10,24 @@ function Circle() {
       className="card_style"
       style={{
         backgroundColor: "#f0f0f5",
+        marginTop: "-31%",
       }}
     >
+      <CardContent>
+        <Typography
+          gutterBottom
+          varient="h1"
+          sx={{
+            fontWeight: "bold",
+            fontSize: 30,
+            color: "#484848",
+            fontFamily: "koulen",
+            textAlign: "center",
+          }}
+        >
+          PortFolio{" "}
+        </Typography>
+      </CardContent>
       <div className="Add">
         <div className="skill">
           <div className="outer">
@@ -37,11 +53,10 @@ function Circle() {
       </div>
       <Card
         style={{
-          backgroundColor: "#e6e6fa",
           maxWidth: "300px",
           maxHeight: "70px",
-          marginTop: "30px",
           marginLeft: "20px",
+          marginTop: "30px",
           borderRadius: "10px",
           display: "flex",
         }}
@@ -63,11 +78,11 @@ function Circle() {
       </Card>
       <Card
         style={{
-          backgroundColor: "#eaf8ea",
           maxWidth: "300px",
           maxHeight: "70px",
           marginTop: "30px",
           marginLeft: "20px",
+          marginBottom: "30px",
           borderRadius: "10px",
           display: "flex",
         }}
