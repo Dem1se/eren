@@ -8,13 +8,12 @@ export interface Listing {
     interest: number;
 }
 
-// This is never used. Just for documentation
-interface ListingRequest {
-    author_id: string;
-    amount: number;
-    tenure: number;
-    intrest_rate: number;
-}
+// interface ListingRequest {
+//     author_id: string;
+//     amount: number;
+//     tenure: number;
+//     intrest_rate: number;
+// }
 
 interface Offer {
     author_id: string;
@@ -36,10 +35,26 @@ export interface UserProfile {
     // for public profile, add history, contact info, etc.
 }
 
-export interface UserAuth {
+export interface Login {
     id: string;
     email: string;
     secret: string;
+}
+
+// export interface LoginRequest {
+//     email: string;
+//     secret: string;
+// }
+
+export interface Token {
+    user_id: string;
+    token: string;
+}
+
+export interface TokenPayload {
+    sub: string;
+    iss: 'yeager';
+    iat?: number; // automatically added by signer
 }
 
 interface Settings { }; // TODO

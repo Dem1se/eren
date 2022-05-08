@@ -4,3 +4,8 @@ export function isListingRequest(obj: Object) {
         obj.hasOwnProperty('interest_rate') && 
         obj.hasOwnProperty('author_id')
 }
+
+// export function isLoginRequest(obj: Object) {
+//     return obj.hasOwnProperty('email') &&
+//         obj.hasOwnProperty('secret')
+// }

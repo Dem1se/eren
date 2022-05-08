@@ -8,14 +8,6 @@ export const listingRouter = Router()
 const dbConnect = new DBClient()
 const listing = dbConnect.getDb().collection('listings')
 
-/*
-* GET example.com/listing/
-* GET example.com/listing?id=
-* ~~~POST example.com/listing?id=~~~
-* POST example.com/listing/new
-* DELETE example.com/listing?id=
-*/
-
 // TODO: Authorization for EVERYTHING
 listingRouter.route('/')
   .all(function (req, res, next) {
@@ -39,10 +31,9 @@ listingRouter.route('/')
       res.status(200).json(results)
     }
   })
-  // NOT SUPPORTING THE AUTHOR UPDATING Borrow listings
+  // NOT SUPPORTING THE AUTHOR UPDATING BORROW LISTINGS
   // .post(function (req, res) {
   //   if (req.query.id) {
-  //     // TODO: check for permission
   //   } else {
   //     res.sendStatus(400)
   //   }

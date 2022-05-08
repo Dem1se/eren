@@ -5,6 +5,7 @@ import express, { Application } from 'express'
 dotenv.config({ path: './server/.env' }) // CWD: server/..
 
 import { listingRouter } from './routes/listing'
+import { authRouter } from './routes/auth'
 
 const app: Application = express()
 
@@ -13,6 +14,7 @@ app.use(cookieParser())
 // cors?
 
 app.use('/listing', listingRouter)
+app.use('/auth', authRouter)
 
 app.listen(process.env.PORT || 3555, function () {
   console.log(`Server started on ${process.env.PORT}`)

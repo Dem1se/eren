@@ -14,7 +14,7 @@
             "preLaunchTask": "npm: prestart - server",
             "program": "${workspaceFolder}\\server\\dist\\index.js",
             "outFiles": [
-                "${workspaceFolder}/**/*.js"
+                "${workspaceFolder}/server/dist/**/*.js"
             ],
             "internalConsoleOptions": "openOnSessionStart",
         }
