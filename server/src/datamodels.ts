@@ -46,6 +46,16 @@ export interface Login {
 //     secret: string;
 // }
 
+export interface SignupRequest {
+    email: string;
+    password: string;
+    firstname: string;
+    lastname: string;
+    dob: Date;
+
+    
+}
+
 export interface Token {
     user_id: string;
     token: string;
@@ -57,4 +67,4 @@ export interface TokenPayload {
     iat?: number; // automatically added by signer
 }
 
-interface Settings { }; // TODO
+interface AccountSettings { }; // TODO
