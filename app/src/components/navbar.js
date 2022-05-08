@@ -1,8 +1,6 @@
 import "./navbar.css";
 import Navbar from "./navbar/index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/index";
-import About from "./pages/About";
 
 function Nav() {
   return (
@@ -15,8 +13,8 @@ function Nav() {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
+        <Route exact path="/" />
+        <Route exact path="/about" />
       </Routes>
     </Router>
   );

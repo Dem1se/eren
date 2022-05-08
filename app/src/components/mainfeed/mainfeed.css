@@ -1,0 +1,39 @@
+.Main_feed :hover {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.smaller_info_borrow {
+  font-family: koulen;
+  font-size: 10px;
+  color: #878585;
+}
+
+.money {
+  margin-top: 10%;
+}
+
+.response_style {
+  margin-top: 3%;
+  font-family: koulen;
+  font-weight: bold;
+  font-size: 27px;
+  color: #2f4f4f;
+}
+.money_response {
+  margin-top: -13%;
+  text-align: right;
+  margin-right: 6%;
+  font-size: 26px;
+  font-family: koulen;
+}
+
+.person_id {
+  font-size: 9px;
+  text-align: left;
+  margin-left: 4.5%;
+}
+
+.smaller_info_borrow {
+  text-align: right;
+  margin-right: 12%;
+}
