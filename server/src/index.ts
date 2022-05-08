@@ -2,7 +2,7 @@ import cookieParser from 'cookie-parser'
 import dotenv from 'dotenv'
 import express, { Application } from 'express'
 
-dotenv.config({ path: './server/.env' })
+dotenv.config({ path: './server/.env' }) // CWD: server/..
 
 import { listingRouter } from './routes/listing'
 

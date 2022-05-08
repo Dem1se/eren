@@ -5,6 +5,14 @@ export interface Listing {
     status: 'active' | 'approved' | 'cancelled';
     amount: number;
     tenure: number;
+    interest: number;
+}
+
+// This is never used. Just for documentation
+interface ListingRequest {
+    author_id: string;
+    amount: number;
+    tenure: number;
     intrest_rate: number;
 }
 
