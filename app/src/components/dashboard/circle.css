@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "koulen";
 }
 
 .add {
@@ -31,7 +31,7 @@
     -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
   padding: 20px;
   margin-left: -46%;
-  margin-top: -43%;
+  margin-top: -40%;
 }
 
 .inner {
@@ -48,6 +48,7 @@
 }
 #number {
   font-weight: 600;
+
   color: #555;
 }
 
@@ -75,8 +76,8 @@ svg {
 }
 
 .card_style {
-  margin-left: 72%;
-  margin-top: 10%;
+  margin-left: 81.2%;
+  margin-top: 100%;
   align-items: center;
   justify-content: center;
   max-width: 350px;

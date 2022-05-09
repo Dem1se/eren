@@ -10,7 +10,10 @@ function Circle() {
       className="card_style"
       style={{
         backgroundColor: "#f0f0f5",
-        marginTop: "-31%",
+        marginTop: "-32%",
+        maxWidth: "260px",
+        minHeight: "200px",
+        borderRadius: "6px",
       }}
     >
       <CardContent>
@@ -19,10 +22,10 @@ function Circle() {
           varient="h1"
           sx={{
             fontWeight: "bold",
-            fontSize: 30,
+            fontSize: 28,
             color: "#484848",
             fontFamily: "koulen",
-            textAlign: "center",
+            textAlign: "left",
           }}
         >
           PortFolio{" "}
@@ -32,7 +35,9 @@ function Circle() {
         <div className="skill">
           <div className="outer">
             <div className="inner">
-              <div id="number">$1000</div>
+              <div id="number" style={{ fontSize: "20px" }}>
+                $1000
+              </div>
             </div>
           </div>
           <svg
@@ -53,11 +58,11 @@ function Circle() {
       </div>
       <Card
         style={{
-          maxWidth: "300px",
-          maxHeight: "70px",
-          marginLeft: "20px",
-          marginTop: "30px",
-          borderRadius: "10px",
+          maxWidth: "245px",
+          maxHeight: "60px",
+          marginLeft: "8px",
+          marginTop: "20px",
+          borderRadius: "6px",
           display: "flex",
         }}
         className="Money_card"
@@ -66,7 +71,7 @@ function Circle() {
           <Typography
             gutterButton
             varient="h4"
-            style={{ display: "flex", fontSize: "10px" }}
+            style={{ display: "flex", fontSize: "10px", marginTop: "-5%" }}
           >
             Money Transfer
             <br />
@@ -78,12 +83,12 @@ function Circle() {
       </Card>
       <Card
         style={{
-          maxWidth: "300px",
-          maxHeight: "70px",
-          marginTop: "30px",
-          marginLeft: "20px",
-          marginBottom: "30px",
-          borderRadius: "10px",
+          maxWidth: "245px",
+          maxHeight: "60px",
+          marginTop: "10px",
+          marginLeft: "8px",
+          marginBottom: "10px",
+          borderRadius: "6px",
           display: "flex",
         }}
         className="Due_card"
@@ -92,7 +97,12 @@ function Circle() {
           <Typography
             gutterButton
             varient="h4"
-            style={{ display: "flex", fontSize: "10px", display: "flex" }}
+            style={{
+              display: "flex",
+              fontSize: "10px",
+              display: "flex",
+              marginTop: "-9%",
+            }}
           >
             Due
             <br />

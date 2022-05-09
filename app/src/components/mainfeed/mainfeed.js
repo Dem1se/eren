@@ -8,11 +8,13 @@ function Mainfeed() {
     <div>
       <Card
         style={{
-          maxWidth: 420,
+          minWidth: "57vw",
+          maxWidth: "57vw",
           margin: "0px auto",
-          minHeight: "10vh",
+          minHeight: "75 vh",
+          maxHeight: "75vh",
           marginTop: "8%",
-          marginRight: "40%",
+          marginRight: "24.3%",
         }}
       >
         <CardContent>
@@ -24,7 +26,8 @@ function Mainfeed() {
               fontSize: 30,
               color: "#484848",
               fontFamily: "koulen",
-              textAlign: "center",
+              textAlign: "left",
+              marginTop: "-1.2%",
             }}
           >
             New{" "}
@@ -35,21 +38,21 @@ function Mainfeed() {
             <Card
               style={{
                 fontSize: "8px",
-                minHeight: "15vh",
+                minHeight: "22vh",
                 display: "flex",
-                marginTop: "0.1%",
+                marginTop: "-4%",
                 overflowX: "auto",
               }}
             >
               <Card
                 style={{
-                  minHeight: "12vh",
-                  minWidth: "7vw",
-                  marginTop: "3%",
-                  marginLeft: "3%",
+                  minHeight: "15vh",
+                  minWidth: "10vw",
+                  marginTop: "1.8%",
+                  marginLeft: "1.8%",
 
-                  marginBottom: "3%",
-                  fontSize: "30px",
+                  marginBottom: "1.8%",
+                  fontSize: "32px",
                   textAlign: "center",
                   fontFamily: "koulen",
                   fontWeight: "bold",
@@ -57,17 +60,17 @@ function Mainfeed() {
                 }}
                 className="new_hover"
               >
-                <div className="money">100$</div>
+                <div className="money">$100</div>
                 <div className="smaller_info_borrow_new">6 Months | 5%</div>
               </Card>
               <Card
                 style={{
-                  minHeight: "12vh",
-                  minWidth: "7vw",
-                  marginTop: "3%",
-                  marginLeft: "3%",
+                  minHeight: "15vh",
+                  minWidth: "10vw",
+                  marginTop: "1.8%",
+                  marginLeft: "1.8%",
 
-                  marginBottom: "3%",
+                  marginBottom: "1.8%",
                   fontSize: "30px",
                   textAlign: "center",
                   fontFamily: "koulen",
@@ -76,16 +79,17 @@ function Mainfeed() {
                 }}
                 className="new_hover"
               >
-                <div className="money">600$</div>
+                <div className="money">$600</div>
                 <div className="smaller_info_borrow_new">3 Months | 10%</div>
               </Card>
               <Card
                 style={{
-                  minHeight: "12vh",
-                  minWidth: "7vw",
-                  marginTop: "3%",
-                  marginLeft: "3%",
-                  marginBottom: "3%",
+                  minHeight: "15vh",
+                  minWidth: "10vw",
+                  marginTop: "1.8%",
+                  marginLeft: "1.8%",
+
+                  marginBottom: "1.8%",
                   fontSize: "30px",
                   textAlign: "center",
                   fontFamily: "koulen",
@@ -94,17 +98,17 @@ function Mainfeed() {
                 }}
                 className="new_hover"
               >
-                <div className="money">1100$</div>
+                <div className="money">$1100</div>
                 <div className="smaller_info_borrow_new">10 Months | 8%</div>
               </Card>
               <Card
                 style={{
-                  minHeight: "12vh",
-                  minWidth: "7vw",
-                  marginTop: "3%",
-                  marginLeft: "3%",
-                  marginRight: "3%",
-                  marginBottom: "3%",
+                  minHeight: "15vh",
+                  minWidth: "10vw",
+                  marginTop: "1.8%",
+                  marginLeft: "1.8%",
+
+                  marginBottom: "1.8%",
                   fontSize: "30px",
                   textAlign: "center",
                   fontFamily: "koulen",
@@ -113,17 +117,17 @@ function Mainfeed() {
                 }}
                 className="new_hover"
               >
-                <div className="money">700$</div>
+                <div className="money">$700</div>
                 <div className="smaller_info_borrow_new">8 Months | 23%</div>
               </Card>
               <Card
                 style={{
-                  minHeight: "12vh",
-                  minWidth: "7vw",
-                  marginTop: "3%",
-                  marginLeft: "3%",
-                  marginRight: "3%",
-                  marginBottom: "3%",
+                  minHeight: "15vh",
+                  minWidth: "10vw",
+                  marginTop: "1.8%",
+                  marginLeft: "1.8%",
+
+                  marginBottom: "1.8%",
                   fontSize: "30px",
                   textAlign: "center",
                   fontFamily: "koulen",
@@ -132,17 +136,17 @@ function Mainfeed() {
                 }}
                 className="new_hover"
               >
-                <div className="money">2000$</div>
+                <div className="money">$2000</div>
                 <div className="smaller_info_borrow_new">10 Months | 2%</div>
               </Card>
               <Card
                 style={{
-                  minHeight: "12vh",
-                  minWidth: "7vw",
-                  marginTop: "3%",
-                  marginLeft: "3%",
-                  marginRight: "3%",
-                  marginBottom: "3%",
+                  minHeight: "15vh",
+                  minWidth: "10vw",
+                  marginTop: "1.8%",
+                  marginLeft: "1.8%",
+                  marginRight: "1.8%",
+                  marginBottom: "1.8%",
                   fontSize: "30px",
                   textAlign: "center",
                   fontFamily: "koulen",
@@ -151,7 +155,7 @@ function Mainfeed() {
                 }}
                 className="new_hover"
               >
-                <div className="money">99$</div>
+                <div className="money">$99</div>
                 <div className="smaller_info_borrow_new">1.5 Months | 17%</div>
               </Card>
             </Card>
@@ -163,8 +167,8 @@ function Mainfeed() {
             style={{
               minHeight: "20vh",
               minWidth: "7vw",
-              maxHeight: "25vh",
-              marginTop: "4%",
+              maxHeight: "33.5vh",
+              marginTop: "2%",
               marginLeft: "0.1%",
               marginBottom: "0.1%",
               fontSize: "30px",
@@ -177,12 +181,13 @@ function Mainfeed() {
           >
             <Card
               style={{
-                minHeight: "9vh",
+                minHeight: "12vh",
                 minWidth: "7vw",
-                marginTop: "3%",
-                marginRight: "3%",
-                marginLeft: "3%",
-                marginBottom: "3%",
+                maxHeight: "9vh",
+                marginTop: "1.7%",
+                marginRight: "1.7%",
+                marginLeft: "1.7%",
+                marginBottom: "1.7%",
                 fontSize: "30px",
                 textAlign: "center",
                 fontFamily: "koulen",
@@ -192,21 +197,28 @@ function Mainfeed() {
               className="response_hover"
             >
               <i
-                class="fa-solid fa-user"
-                style={{ marginLeft: "-80%", marginTop: "4%" }}
+                class="fa-solid fa-user fa-2xs"
+                style={{ marginLeft: "-85%", marginTop: "4%" }}
               ></i>
-              <div className="person_id">#142R7TU</div>
-              <div className="money_response">8%&#62;6.2%</div>
-              <div className="smaller_info_borrow">1000$ | 2 Months</div>
+              <div className="person_id">Rohith Khanna</div>
+              <div className="money_response">
+                8<span className="percentage_font">%</span>
+                <span> &#62; </span>
+                6.2
+                <span className="percentage_font">%</span>
+              </div>
+              <div className="smaller_info_borrow">$1000 | 2 Months</div>
+              <div className="smaller_money_response">Last Updated:30 days</div>
             </Card>
             <Card
               style={{
-                minHeight: "9vh",
+                minHeight: "12vh",
                 minWidth: "7vw",
-                marginTop: "3%",
-                marginRight: "3%",
-                marginLeft: "3%",
-                marginBottom: "3%",
+                maxHeight: "9vh",
+                marginTop: "1.7%",
+                marginRight: "1.7%",
+                marginLeft: "1.7%",
+                marginBottom: "1.7%",
                 fontSize: "30px",
                 textAlign: "center",
                 fontFamily: "koulen",
@@ -216,21 +228,28 @@ function Mainfeed() {
               className="response_hover"
             >
               <i
-                class="fa-solid fa-user"
-                style={{ marginLeft: "-80%", marginTop: "4%" }}
+                class="fa-solid fa-user fa-2xs"
+                style={{ marginLeft: "-85%", marginTop: "4%" }}
               ></i>
-              <div className="person_id">#87UZ89</div>
-              <div className="money_response">5%&#62;4.7%</div>
-              <div className="smaller_info_borrow">200$ | 3 Months</div>
+              <div className="person_id">Hammilton</div>
+              <div className="money_response">
+                12<span className="percentage_font">%</span>
+                <span> &#62; </span>
+                11
+                <span className="percentage_font">%</span>
+              </div>
+              <div className="smaller_info_borrow">$10000 | 10 Months</div>
+              <div className="smaller_money_response">Last Updated:2 days</div>
             </Card>
             <Card
               style={{
-                minHeight: "9vh",
+                minHeight: "12vh",
                 minWidth: "7vw",
-                marginTop: "3%",
-                marginRight: "3%",
-                marginLeft: "3%",
-                marginBottom: "3%",
+                maxHeight: "9vh",
+                marginTop: "1.7%",
+                marginRight: "1.7%",
+                marginLeft: "1.7%",
+                marginBottom: "1.7%",
                 fontSize: "30px",
                 textAlign: "center",
                 fontFamily: "koulen",
@@ -240,60 +259,18 @@ function Mainfeed() {
               className="response_hover"
             >
               <i
-                class="fa-solid fa-user"
-                style={{ marginLeft: "-80%", marginTop: "4%" }}
+                class="fa-solid fa-user fa-2xs"
+                style={{ marginLeft: "-84%", marginTop: "4%" }}
               ></i>
-              <div className="person_id">#87UZ89</div>
-              <div className="money_response">5%&#62;4.7%</div>
-              <div className="smaller_info_borrow">200$ | 3 Months</div>
-            </Card>
-            <Card
-              style={{
-                minHeight: "9vh",
-                minWidth: "7vw",
-                marginTop: "3%",
-                marginRight: "3%",
-                marginLeft: "3%",
-                marginBottom: "3%",
-                fontSize: "30px",
-                textAlign: "center",
-                fontFamily: "koulen",
-                fontWeight: "bold",
-                color: "#555252",
-              }}
-              className="response_hover"
-            >
-              <i
-                class="fa-solid fa-user"
-                style={{ marginLeft: "-80%", marginTop: "4%" }}
-              ></i>
-              <div className="person_id">#123UI5</div>
-              <div className="money_response">12%&#62;4.7%</div>
-              <div className="smaller_info_borrow">1000$ | 3 Months</div>
-            </Card>
-            <Card
-              style={{
-                minHeight: "9vh",
-                minWidth: "7vw",
-                marginTop: "3%",
-                marginRight: "3%",
-                marginLeft: "3%",
-                marginBottom: "3%",
-                fontSize: "30px",
-                textAlign: "center",
-                fontFamily: "koulen",
-                fontWeight: "bold",
-                color: "#555252",
-              }}
-              className="response_hover"
-            >
-              <i
-                class="fa-solid fa-user"
-                style={{ marginLeft: "-80%", marginTop: "4%" }}
-              ></i>
-              <div className="person_id">#908RTU1</div>
-              <div className="money_response">7%&#62;6.9%</div>
-              <div className="smaller_info_borrow">99$ | 1 Months</div>
+              <div className="person_id">Verstappen</div>
+              <div className="money_response">
+                10<span className="percentage_font">%</span>
+                <span> &#62; </span>
+                5.2
+                <span className="percentage_font">%</span>
+              </div>
+              <div className="smaller_info_borrow">$100 | 1 Months</div>
+              <div className="smaller_money_response">Last Updated:10 days</div>
             </Card>
           </Card>
         </CardContent>
