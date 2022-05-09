@@ -1,6 +1,6 @@
 export interface Listing {
     id: string;
-    author_id: string;
+    author_id: string; // change this to borrower_id?
     timestamp: Date;
     status: 'active' | 'approved' | 'cancelled';
     amount: number;
@@ -15,9 +15,9 @@ export interface Listing {
 //     intrest_rate: number;
 // }
 
-interface Offer {
+export interface Offer {
     author_id: string;
-    target_id: string;
+    reciever_id: string;
     timestamp: Date;
     amount: number;
     tenure: number;
@@ -25,14 +25,34 @@ interface Offer {
 }
 
 export interface Negotiation {
-    offers: Array<Offer>
+    id: string;
+    listing_id: string;
+    status: 'active' | 'approved' | 'denied' | 'closed'
+    borrower_id: string;
+    lender_id: string;
+    offers: Array<Offer>;
 }
 
-export interface UserProfile {
+export interface NegotiationRequest {
+    listing_id: string;
+    update: {
+        field: 'interest_rate' | 'tenure';
+        new_value: number;
+    };
+}
+
+export interface NegotiationUpdate {
+    negotiation_id: string;
+    update: {
+        field: 'interest_rate' | 'tenure';
+        new_value: number;
+    };
+}
+
+export interface BasicProfile {
     id: string;
     name: string;
     picture: string | undefined;
-    // for public profile, add history, contact info, etc.
 }
 
 export interface Login {
@@ -52,8 +72,6 @@ export interface SignupRequest {
     firstname: string;
     lastname: string;
     dob: Date;
-
-    
 }
 
 export interface Token {
@@ -67,4 +85,17 @@ export interface TokenPayload {
     iat?: number; // automatically added by signer
 }
 
-interface AccountSettings { }; // TODO
+interface Profile {
+    id: string;
+    name: string;
+    picture: string | undefined;
+    cibil: number;
+    aadhar: string;
+    pan: string;
+    salary: Array<string>;
+    bank: {
+        neft_ifcs: string;
+        account_numbe: string;
+    };
+    ctc: number;
+}

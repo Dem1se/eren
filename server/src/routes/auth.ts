@@ -29,7 +29,7 @@ authRouter.post('/login', async function (req, res) {
         console.error("SALT_ROUNDS not in .env! Defaulting to 10.")
     }
     // OR b/w parseInt err result and 10 might not work properly
-    const secret = await bcrypt.hash(pass, parseInt(process.env.SALT_ROUNDS!)|| 10) 
+    const secret = await bcrypt.hash(pass, parseInt(process.env.SALT_ROUNDS!) || 10)
     const loginSuccess = await bcrypt.compare(pass, secret)
 
     if (loginSuccess) {
@@ -54,7 +54,7 @@ authRouter.post('/signup', async function (req, res) {
 
 })
 
-export async function validateToken(token: string /*, user_id: string*/ ) {
+export async function validateToken(token: string /*, user_id: string*/) {
     let tokenStored = await tokens.findOne({ token: token })
     if (!tokenStored) {
         return false
@@ -74,6 +74,7 @@ export async function validateToken(token: string /*, user_id: string*/ ) {
         }
     }
 }
+
 export async function getTokenOwner(token: string): Promise<string | undefined> {
     let owner = await tokens.findOne<Token>({ token: token })
     return owner?.user_id
