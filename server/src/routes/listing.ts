@@ -12,17 +12,17 @@ const listings = dbConnect.getDb().collection('listings')
 listingRouter.route('/')
   .all(async function (req, res, next) {
     let authHead = req.get('Authorization');
-    
+
     // make sure auth header is present
-    if (!authHead) return res.status(401).json({ message: "Authorization headers not set"}).redirect(303, process.env.LOGIN_PAGE!)
-    
+    if (!authHead) return res.status(401).json({ message: "Authorization headers not set" })
+
     // make sure the right auth scheme is used
-    if (authHead.split(" ")[0] != 'Bearer') return res.status(401).json({ message: "Incorrect authorization scheme"})
-    
+    if (authHead.split(" ")[0] != 'Bearer') return res.status(401).json({ message: "Incorrect authorization scheme" })
+
     // make sure the token is generally valid.
     // specfic resource permissions should be checked within specific #METHOD handlers (below)
     let isValidToken = await auth.validateToken(authHead.split(" ")[1])
-    if (!isValidToken) return res.status(401).json({ message: "Invalid token"})
+    if (!isValidToken) return res.status(401).json({ message: "Invalid token" })
     next()
   })
   .get(async function (req, res) {
@@ -46,25 +46,25 @@ listingRouter.route('/')
     if (!req.query.id) {
       return res.sendStatus(400)
     }
-    
+
     let authHead = req.get('Authorization')!
     let token = authHead.split(" ")[1]
     let tokenOwner = await auth.getTokenOwner(token)
     let listing = await listings.findOne<Listing>({ id: req.query.id })
     if (!listing) return res.status(400).json({ message: "Listing not found" })
     if (listing.author_id !== tokenOwner) {
-      return res.status(403).json({ message: "No permission to delete listing"})
+      return res.status(403).json({ message: "No permission to delete listing" })
     }
     let _deleteResult = await listings.deleteOne({ id: req.query.id })
     res.sendStatus(200)
   })
-  // NOT SUPPORTING THE AUTHOR UPDATING BORROW LISTINGS
-  // .post(function (req, res) {
-  //   if (req.query.id) {
-  //   } else {
-  //     res.sendStatus(400)
-  //   }
-  // })
+// NOT SUPPORTING THE AUTHOR UPDATING BORROW LISTINGS
+// .post(function (req, res) {
+//   if (req.query.id) {
+//   } else {
+//     res.sendStatus(400)
+//   }
+// })
 
 listingRouter.post('/new', async function (req, res) {
   if (!typeguards.isListingRequest(req.body)) {
@@ -73,7 +73,7 @@ listingRouter.post('/new', async function (req, res) {
 
   let token = req.get('Authorization')!.split(" ")[1]
   let tokenOwner = await auth.getTokenOwner(token)
-  if (tokenOwner !== req.body.author_id) return res.status(403).json({ 
+  if (tokenOwner !== req.body.author_id) return res.status(403).json({
     message: "Wrong user ID provided in listing"
   })
 

@@ -114,7 +114,7 @@ negoRouter.route('/')
                     }
                 })
                 if (!res1.acknowledged || !res2.acknowledged || !res3.acknowledged) {
-                    return res.status(500).json({ message: "Error updating negotitation" })
+                    return res.status(500).json({ message: "Error updating negotiation" })
                 }
                 res.status(200).json({
                     message: "Accepted negotiation successfully",
@@ -128,7 +128,7 @@ negoRouter.route('/')
                     }
                 })
                 if (!res1.acknowledged) {
-                    return res.status(500).json({ message: "Error updating negotitation" })
+                    return res.status(500).json({ message: "Error updating negotiation" })
                 }
                 res.status(200).json({
                     message: "Successfully denied load request and negotiation",

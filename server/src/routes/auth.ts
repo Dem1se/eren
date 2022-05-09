@@ -59,15 +59,9 @@ export async function validateToken(token: string /*, user_id: string*/) {
     if (!tokenStored) {
         return false
     } else {
-        // Tokens are independent auth artifacts, and shouldn't rely on other values
         let pubkey = await fs.readFile('./server/ec-secp256k1-pub-key.pem')
         try {
-            let payload = jwt.verify(token, pubkey, { algorithms: ['ES256'], issuer: 'yeager' }) as any
-            // if (user_id == payload.sub) {
-            //     return true
-            // } else {
-            //     return false
-            // }
+            let _payload = jwt.verify(token, pubkey, { algorithms: ['ES256'], issuer: 'yeager' }) as any
             return true
         } catch (err) {
             return false
