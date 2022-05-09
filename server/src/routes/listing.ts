@@ -9,7 +9,6 @@ export const listingRouter = Router()
 const dbConnect = new DBClient()
 const listings = dbConnect.getDb().collection('listings')
 
-// TODO: Authorization for EVERYTHING
 listingRouter.route('/')
   .all(async function (req, res, next) {
     let authHead = req.get('Authorization');
