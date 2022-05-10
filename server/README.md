@@ -35,3 +35,8 @@ The expressjs backend for the Flipr Hackathon XIII project.
 
 - `user`
 
+- `status`
+
+- `upload`
+
+

@@ -1,0 +1,12 @@
+- /upload
+- /settings
+- 
+
+
+- Give Cibil as part of /user/status
+- Check for loan limits of user when creating in /listing/new
+- Check negotitaion status before allowing updates from any party
+- Remove listings with ID's that are already in negotiations for the given user
+
+- Mailer
+- Caching for internal token utility functions

@@ -19,7 +19,6 @@ negoRouter.route('/')
             return res
                 .status(401)
                 .json({ message: "Authorization headers not set" })
-                .redirect(303, process.env.LOGIN_PAGE!)
         }
 
         // make sure the token is generally valid.

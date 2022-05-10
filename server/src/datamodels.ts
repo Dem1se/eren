@@ -8,12 +8,12 @@ export interface Listing {
     interest: number;
 }
 
-// interface ListingRequest {
-//     author_id: string;
-//     amount: number;
-//     tenure: number;
-//     intrest_rate: number;
-// }
+interface ListingRequest {
+    author_id: string;
+    amount: number;
+    tenure: number;
+    intrest_rate: number;
+}
 
 export interface Offer {
     author_id: string;
@@ -49,22 +49,16 @@ export interface NegotiationUpdate {
     };
 }
 
-export interface BasicProfile {
-    id: string;
-    name: string;
-    picture: string | undefined;
-}
-
 export interface Login {
     id: string;
     email: string;
     secret: string;
 }
 
-// export interface LoginRequest {
-//     email: string;
-//     secret: string;
-// }
+interface LoginRequest {
+    email: string;
+    secret: string;
+}
 
 export interface SignupRequest {
     email: string;
@@ -85,17 +79,23 @@ export interface TokenPayload {
     iat?: number; // automatically added by signer
 }
 
+export interface BasicProfile {
+    id: string;
+    name: string;
+    avatar: string;
+}
+
 interface Profile {
     id: string;
     name: string;
-    picture: string | undefined;
+    avatar: string;
     cibil: number;
     aadhar: string;
     pan: string;
     salary: Array<string>;
     bank: {
         neft_ifcs: string;
-        account_numbe: string;
+        account_number: string;
     };
     ctc: number;
 }

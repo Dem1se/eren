@@ -7,6 +7,7 @@ dotenv.config({ path: './server/.env' }) // CWD: server/..
 import { listingRouter } from './routes/listing'
 import { authRouter } from './routes/auth'
 import { negoRouter } from './routes/negotiation'
+import { uploadRouter } from './routes/upload'
 
 const app: Application = express()
 
@@ -17,6 +18,7 @@ app.use(cookieParser())
 app.use('/listing', listingRouter)
 app.use('/auth', authRouter)
 app.use('/negotiation', negoRouter)
+app.use('/upload', uploadRouter)
 
 app.listen(process.env.PORT || 3555, function () {
   console.log(`Server started on ${process.env.PORT}`)

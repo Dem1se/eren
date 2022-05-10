@@ -12,7 +12,8 @@ export class DBClient {
         this.client = new MongoClient(process.env.ATLAS_URI)
         this.client.connect((err, conn) => {
             if (err || !conn) {
-                console.error('Error connection to database.')
+                console.error('Error connecting to database. Hint: Check if the IP is allowed network acess in cluster config.')
+                console.error(err)
                 process.exit(3)
             }
             if (!process.env.DB_NAME) {
