@@ -4,16 +4,20 @@
 
   list-style: none;
   text-decoration: none;
+  font-family: koulen;
 }
 .topbar {
-  top: -0.1%;
-  background-color: rgb(135, 134, 133);
+  top: 0%;
+  background-color: rgb(0, 0, 0);
   position: fixed;
   left: 0;
   right: 0;
   height: 70px;
   display: flex;
   align-items: center;
+}
+.horizontal_line {
+  border-right: 1px solid rgba(0, 0, 0, 1);
 }
 .nav {
   margin-top: 150px;
@@ -22,12 +26,13 @@
 .sidebar {
   position: fixed;
   left: 0px;
-  width: 220px;
+  width: 200px;
   height: 100%;
   color: #2f4f4f;
-  margin-top: 5%;
+  margin-top: 2%;
   /*background: #03dac6;*/
   transition: all ease 0.5s;
+  border-right: 2px solid rgba(0, 0, 0, 0.7);
 }
 
 .sidebar header {
@@ -49,8 +54,8 @@
   padding-left: 40px;
   box-sizing: border-box;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-right: 1px solid #878585;
   /*  border-bottom: 1px solid rgb(14, 131, 135);*/
+
   transition: 0.4s;
 }
 
